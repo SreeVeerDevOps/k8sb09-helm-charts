@@ -1,0 +1,113 @@
+apiVersion: v1
+entries:
+  jenkins:
+  - annotations:
+      category: Infrastructure
+    apiVersion: v2
+    appVersion: 2.319.2
+    created: "2022-01-30T15:41:11.682391504Z"
+    dependencies:
+    - name: common
+      repository: https://charts.bitnami.com/bitnami
+      tags:
+      - bitnami-common
+      version: 1.x.x
+    description: The leading open source automation server
+    digest: 01fdc1ab2fbc568e5feb33d32fae69ff3116abd66e0f47575244251b6a51ccc1
+    home: https://github.com/bitnami/charts/tree/master/bitnami/jenkins
+    icon: https://bitnami.com/assets/stacks/jenkins/img/jenkins-stack-220x234.png
+    keywords:
+    - jenkins
+    - ci
+    - cd
+    - http
+    - web
+    - application
+    maintainers:
+    - email: containers@bitnami.com
+      name: Bitnami
+    name: jenkins
+    sources:
+    - https://github.com/bitnami/bitnami-docker-jenkins
+    - https://jenkins.io/
+    urls:
+    - https://sreeveerdevops.github.io/k8sb09-helm-charts/jenkins-8.1.4.tgz
+    version: 8.1.4
+  mynginx:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2022-01-30T15:41:11.68270122Z"
+    description: A Helm chart for Kubernetes
+    digest: b3be003b569000b3e88197f535bca8441c663317c129926104077d9f4a18611f
+    name: mynginx
+    type: application
+    urls:
+    - https://sreeveerdevops.github.io/k8sb09-helm-charts/mynginx-1.0.0.tgz
+    version: 1.0.0
+  mysql:
+  - annotations:
+      category: Database
+    apiVersion: v2
+    appVersion: 8.0.28
+    created: "2022-01-30T15:41:11.688417289Z"
+    dependencies:
+    - name: common
+      repository: https://charts.bitnami.com/bitnami
+      tags:
+      - bitnami-common
+      version: 1.x.x
+    description: Chart to create a Highly available MySQL cluster
+    digest: 96f79c6daba90fb40fc698979fab33f7a60987b1d23cd5080bc885129568a423
+    home: https://github.com/bitnami/charts/tree/master/bitnami/mysql
+    icon: https://bitnami.com/assets/stacks/mysql/img/mysql-stack-220x234.png
+    keywords:
+    - mysql
+    - database
+    - sql
+    - cluster
+    - high availability
+    maintainers:
+    - email: containers@bitnami.com
+      name: Bitnami
+    name: mysql
+    sources:
+    - https://github.com/bitnami/bitnami-docker-mysql
+    - https://mysql.com
+    urls:
+    - https://sreeveerdevops.github.io/k8sb09-helm-charts/mysql-8.8.23.tgz
+    version: 8.8.23
+  solr:
+  - annotations:
+      category: Infrastructure
+    apiVersion: v2
+    appVersion: 8.11.1
+    created: "2022-01-30T15:41:11.698040594Z"
+    dependencies:
+    - condition: zookeeper.enabled
+      name: zookeeper
+      repository: https://charts.bitnami.com/bitnami
+      version: 8.x.x
+    - name: common
+      repository: https://charts.bitnami.com/bitnami
+      tags:
+      - bitnami-common
+      version: 1.x.x
+    description: Apache Solr is an open source enterprise search platform
+    digest: fd22fb73c52874a180fbe2f5d05640d0d57b21ed670859e5cb356db257ae4d96
+    home: https://github.com/bitnami/charts/tree/master/bitnami/solr
+    icon: https://bitnami.com/assets/stacks/solr/img/solr-stack-110x117.png
+    keywords:
+    - solr
+    - zookeeper
+    - apache
+    maintainers:
+    - email: containers@bitnami.com
+      name: Bitnami
+    name: solr
+    sources:
+    - https://github.com/bitnami/bitnami-docker-solr
+    - https://lucene.apache.org/solr/
+    urls:
+    - https://sreeveerdevops.github.io/k8sb09-helm-charts/solr-3.0.2.tgz
+    version: 3.0.2
+generated: "2022-01-30T15:41:11.67887808Z"
